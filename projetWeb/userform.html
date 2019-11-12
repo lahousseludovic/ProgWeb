@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/projetWeb/style/userform.css"/>
+	<title>Prise de Rendez-vous</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="http://localhost:8080/projetWeb/Index">Accueil</a></li>
+				<li><a href="http://localhost:8080/projetWeb/RDV">Rendez-vous</a></li>
+				<li><a href="http://localhost:8080/projetWeb/Contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div>
+			<h1>Prendre un rendez-vous</h1>
+			<p>Veuillez renseigner les champs suivant, validez et on vous recontacte</p>
+		</div>
+		<form action="http://localhost:8080/projetWeb/servlet/ResultatFormulaire" method="post">
+			<section>
+				<div class="field">
+					<p>Nom</p>
+					<input type="text" size="40" name="nom" value="" placeholder="Entrez votre nom" required>          
+				</div>
+				<div class="field">
+					<p>Prénom</p>
+					<input type="text" size="40" name="prenom" value="" placeholder="Entrez votre prénom" required>
+				</div>
+				<div class="field">
+					<p>Email</p>
+					<input type="text" size="40" name="email" value="" placeholder="Entrez votre email">
+				</div>
+				<div class="field">
+					<p>Téléphone</p>
+					<input type="text" size="40" name="telephone" value="" placeholder="Entrez votre num&eacute;ro de t&eacute;l&eacute;phone">
+				</div>
+			</section>
+			<section>
+				<div class="radios">
+					<h2>Comment préferez vous être rappeler ?</h2>
+					<div class="1radio">
+						<input type="radio" name="preferenceRappel" value="telephone">
+						<label>Téléphone</label>
+					</div>
+					<div class="1radio">
+						<input type="radio" name="preferenceRappel" value="email">
+						<label>Email</label>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="checkbox">
+					<h2>Quelles sont vos jours disponibles ?</h2>
+					<div class="box">
+						<input type="checkbox" name="preferenceLundi" value="ok">
+						<label>Lundi</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="preferenceMardi" value="ok">
+						<label>Mardi</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="preferenceMercredi" value="ok">
+						<label>Mercredi</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="preferenceJeudi" value="ok">
+						<label>Jeudi</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="preferenceVendredi" value="ok">
+						<label>Vendredi</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="preferenceSamedi" value="ok">
+						<label>Samedi</label>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="checkbox">
+					<h2>Quel est le meilleur moment pour votre rendez-vous ?</h2>
+					<div class="box">
+						<input type="checkbox" name="preferenceMatin" value="ok">
+						<label>Matin</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="preferenceAprem" value="ok">
+						<label>Après-Midi</label>
+					</div>
+				</div>
+			</section>
+			<div>
+				<input type="reset" id="reset" value="effacer"></input>
+				<input type="submit" id="valid" value="valider"></input>
+			</div>
+		</form>
+	</main>
+</body>
+</html>

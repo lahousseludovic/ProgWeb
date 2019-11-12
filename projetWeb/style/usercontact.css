@@ -1,0 +1,134 @@
+body{
+  background:#E6E6E6;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}
+
+
+
+/*NAVBAR*/
+
+nav{
+	z-index: 999;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #000;
+}
+
+nav ul{
+  list-style-type: none;
+  text-align: center;
+  height: 2.5em;
+}
+
+nav ul li{
+  display: inline-block;
+  text-align: center;
+ padding: 0.7em 3em 0em 3em;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover, nav ul li a:active{
+  border-bottom: 0.12em solid #ccc;
+  padding-bottom: 0.5em;
+}
+header nav ul li a:focus {
+	outline: none;
+}
+
+
+
+/*MAIN PAGE*/
+
+main{
+	margin-top: 5em;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+
+}
+
+section{
+
+	font-family: 'Roboto', sans-serif;
+  background:#FFFFFF;
+  box-shadow:0 2px 3px rgba(0, 0, 0, 0.1);
+  padding:1em;
+  margin:1em;
+  display: flex;
+}
+
+.content{
+	 display:flex;
+	 flex-direction:row;
+	 width: 100%;
+	 margin-top: 1em;
+
+}
+
+.info{
+	flex:1;
+}
+.info section{
+	margin-top: 8%;
+}
+
+.map{
+	margin-top: 1%;
+	flex:2;
+}
+
+ul{
+	list-style-type: none;
+}
+
+img{
+	width: 12%;
+	height: 12%;
+}
+p{
+	margin-left: 3%;
+}
+
+
+/*TITLE*/
+
+h1{
+	font-size: 3em;
+}
+span{
+	font-weight: 550;
+}
+.horaire{
+	flex-direction:column;
+}
+.horaire ul{
+	text-align: left;
+}
+.network{
+	width: auto;
+	 justify-content: space-around;
+	align-items: center;
+	display: flex;
+	margin:5%;
+	margin-left: 10%;
+}
+.network img{
+	margin-left: 3%;
+  	width: 25%;
+	height: 25%;
+}
+.network span{
+	width: 25%;
+}
